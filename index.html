@@ -162,3 +162,4 @@ const end=new Date('2026-10-16T23:59:59+05:30'),cd=document.getElementById('cd')
 function tick(){let s=Math.max(0,(end-new Date())/1000|0);const v=[[s/86400|0,'Days'],[s%86400/3600|0,'Hours'],[s%3600/60|0,'Mins'],[s%60,'Secs']];cd.innerHTML=v.map(x=>'<div class="u"><b>'+String(x[0]).padStart(2,'0')+'</b><small>'+x[1]+'</small></div>').join('')}
 tick();setInterval(tick,1000);
 </script></body></html>
+
